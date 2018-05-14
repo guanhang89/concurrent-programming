@@ -39,6 +39,4 @@ public class AtomicIntegerFieldUpdaterDemo {
         System.out.println("score=" + stu.score);
         System.out.println("allScore=" + allScore);
     }
-
-
 }

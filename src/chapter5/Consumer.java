@@ -19,7 +19,7 @@ public class Consumer implements Runnable {
         Random r = new Random();
         try{
             while (true) {
-                PCData data = new PCData();
+                PCData data = new PCData(1);
                 if (data != null) {
                     int re = data.getIntData() * data.getIntData();
                     System.out.println(MessageFormat.format("{0}*{1}={2}", data.getIntData(), data.getIntData()));

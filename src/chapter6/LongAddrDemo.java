@@ -1,7 +1,5 @@
 package chapter6;
 
-import org.omg.CORBA.PRIVATE_MEMBER;
-
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -9,7 +7,6 @@ import java.util.concurrent.atomic.AtomicLong;
 import java.util.concurrent.atomic.LongAdder;
 
 public class LongAddrDemo {
-
     private static final int MAX_THREADS = 3;
     private static final int TASK_COUNT = 3;
     private static final int TARGET_COUNT = 100000000;
@@ -63,7 +60,6 @@ public class LongAddrDemo {
         cdlsyn.await();
         exe.shutdown();
     }
-
 
     public class AtomicThread implements Runnable {
 
